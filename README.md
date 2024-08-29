@@ -22,40 +22,35 @@ Setup Instructions
 Clone the repository:
 
 bash
-Copy code
 git clone https://github.com/yourusername/portfolio-website.git
 Navigate to the project directory:
 
 bash
-Copy code
 cd portfolio-website
 Install backend dependencies:
 
 bash
-Copy code
 cd backend
 npm install
 Install frontend dependencies:
 
 bash
-Copy code
 cd ../frontend
 npm install
 Start the MongoDB server:
 
 bash
-Copy code
 mongod
 Start the backend server:
 
 bash
-Copy code
+
 cd ../backend
 npm start
 Start the Angular frontend:
 
 bash
-Copy code
+
 cd ../frontend
 ng serve
 Access the application:
