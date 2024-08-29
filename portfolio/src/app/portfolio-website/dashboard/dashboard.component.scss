@@ -1,0 +1,137 @@
+.dashboard  {
+  font-family: "Playfair Display", serif;
+  background-color: #e8ebf3;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  // max-width: 1000px;
+  width: 95%;
+  margin: 40px auto;
+  // background: #ffffff;
+  padding: 30px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-top: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #4a90e2;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 35px;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.add-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-button:hover {
+  background-color: #357ab8;
+  transform: translateY(-2px);
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.styled-table th, .styled-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.styled-table th {
+  background-color: #f4f6f9;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.styled-table td img {
+  max-width: 60px;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+.styled-table td p{
+  max-width: 300px;
+  font-size: 18px
+}
+.styled-table td h5{
+font-weight: bold;
+max-width: 200px;
+font-size: 28px;
+}
+
+.styled-table tr:hover {
+  background-color: #e6effa;
+}
+
+.styled-table td img:hover {
+  transform: scale(1.1);
+}
+
+.edit-button, .delete-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.edit-button {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #ec971f;
+  transform: translateY(-2px);
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+  transform: translateY(-2px);
+}
+
+.delete-button:focus, .edit-button:focus, .add-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

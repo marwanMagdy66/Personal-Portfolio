@@ -1,0 +1,58 @@
+.navbar
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background-color: rgb(29, 5, 53);
+color: white;
+font-family: "Playfair Display", serif;
+ font-size: 20px;
+ font-style: normal;
+}
+
+.nav-links
+{
+list-style: none;
+display: flex;
+}
+.nav-links li{
+  margin-right: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-links a:hover{
+  color: rgb(193, 180, 220);
+  cursor: pointer;
+  transform: scale(2.05);
+}
+
+.login-btn {
+  background-color: rgb(107, 22, 193); /* Base background color */
+  color: #fff; /* Text color */
+  padding: 9px 20px; /* Adjust padding */
+  border: none;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 20px; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-align: center;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-top: -8px;
+}
+
+.login-btn:hover {
+  background-color: rgb(45, 8, 76); /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.login-btn:active {
+  background-color: rgb(20, 4, 53); /* Even darker shade on click */
+  transform: scale(0.98); /* Slightly smaller on click */
+}

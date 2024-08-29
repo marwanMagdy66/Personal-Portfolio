@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="form-container">
+  <h2>Edit Skill</h2>
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+
+  <form (ngSubmit)="updateSkill()">
+    <div class="form-group">
+      <label for="skillName">New Skill Name</label>
+      <input type="text" id="skillName" name="skillName" [(ngModel)]="skillName"  placeholder="Enter your Skill name" required >
+    </div>
+
+    <div class="form-group">
+      <label for="skillDetails">Details of the Skill</label>
+      <textarea id="skillDetails" name="skillDetails" [(ngModel)]="skillDetails" placeholder="Add Skill Details" rows="6" required ></textarea>
+    </div>
+
+    <div class="form-group file-upload-group">
+      <label for="skillImage" class="custom-file-label">
+        <i class="fas fa-upload"></i> Upload Image for That skill
+      </label>
+      <input type="file" id="skillImage" (change)="onFileChange($event)" name="skill">
+    </div>
+
+
+    <button type="submit">Update Skill</button>
+  </form>
+</div>
+</div>

@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "66cbb7ac8c5de0769cbe17a6"
+  },
+  "skillName": "Angular",
+  "skillDetails": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.\r\n",
+  "skillPic": [
+    "/angular.jpg"
+  ],
+  "projectName": "cinema ",
+  "projectDetails": "cinema book ticket , book sets and book popcorn and drinks ",
+  "projectPic": [
+    "/cinema2.jpg"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66cbb8b38c5de0769cbe17ac"
+  },
+  "skillName": "Object-oriented programming (OOP)",
+  "skillDetails": "Object-oriented programming (OOP) is a style of programming characterized by the identification of classes of objects closely linked with the methods (functions) with which they are associated.\r\n",
+  "skillPic": [
+    "/oop.jpg"
+  ],
+  "projectName": "e-commerce",
+  "projectDetails": "e-commerce using CRUD operation and filters in search operation",
+  "projectPic": [
+    "/ecommerce.jpg"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66cbb9308c5de0769cbe17b0"
+  },
+  "skillName": "Problem Solving",
+  "skillDetails": "Problem solving is the act of defining a problem; determining the cause of the problem; identifying, prioritizing, and selecting alternatives for a solution; and implementing a solution.\r\n",
+  "skillPic": [
+    "/solving-skills.jpg"
+  ],
+  "projectName": "management system for store data ",
+  "projectDetails": "management system for store data  and organize all items ",
+  "projectPic": [
+    "/electronic.jpg"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66cf7aede9fa031a25071f76"
+  },
+  "skillName": "Node js",
+  "skillDetails": "is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside of a web browser",
+  "skillPic": [
+    "/nodejs.png"
+  ],
+  "projectName": "",
+  "projectDetails": "",
+  "projectPic": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66cf7b2ae9fa031a25071f7a"
+  },
+  "skillName": "Express js",
+  "skillDetails": "Express is a node js web application framework that provides broad features for building web and mobile applications.",
+  "skillPic": [
+    "/express.png"
+  ],
+  "projectName": "null",
+  "projectDetails": "null",
+  "projectPic": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66cf7b6ee9fa031a25071f7f"
+  },
+  "skillName": "MongoDB",
+  "skillDetails": "\r\nMongoDB is a schema-less database, which means the database can manage data without the need for a blueprint. Document. Data in MongoDB is stored in documents with key-value pairs instead of rows and columns, which makes the data more flexible when compared to SQL databases.",
+  "skillPic": [
+    "/mongodb.png"
+  ],
+  "projectName": "",
+  "projectDetails": "",
+  "projectPic": null,
+  "__v": 0
+}]

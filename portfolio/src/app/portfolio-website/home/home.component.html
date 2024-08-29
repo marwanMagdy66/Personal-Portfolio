@@ -1,0 +1,71 @@
+<app-navbar></app-navbar>
+
+<div class="home-container">
+  <div class="main-content animate__animated animate__fadeInU">
+    <div class="main-content animate__animated animate__fadeInU">
+      <div class="profile-container">
+        <img
+          src="/profile3.jpg"
+          class="profile-img"
+          alt="profile Image"
+        />
+      </div>
+      <div class="text-container">
+        <h1>Summary</h1>
+        <p>
+          Hello! I’m Marwan Magdy, a motivated and dedicated Computer Science student with a strong foundation in programming, algorithms, OOP, Data Structures, and software development. I have a proven track record of academic excellence and practical experience gained through various projects.
+        </p>
+        <p>
+          I am proficient in several programming languages including Python, Java, PHP, C, and C++. My skills extend to quickly adapting to new technologies and solving complex problems. I’m a proactive learner with excellent communication skills and a passion for leveraging technology to create innovative solutions.
+        </p>
+        <p>
+          Currently, I am seeking opportunities to apply my knowledge and skills in a dynamic and collaborative environment.
+        </p>
+        <div class="contact-info">
+          <p>
+            <i class="fas fa-envelope"></i> Email: <a href="mailto:marwanmagdy826@gmail.com">marwanmagdy826&#64;gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> Phone: +201021321407
+          </p>
+          <p>
+            <i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/marwan-magdy-31a619232/" target="_blank">My Profile Link</a>
+          </p>
+          <p>
+            <i class="fab fa-github"></i> GitHub: <a href="https://github.com/marwanMagdy66" target="_blank">My GitHub Link</a>
+          </p>
+        </div>
+      </div>
+</div>
+  </div>
+
+<app-about></app-about>
+
+
+
+  <div>
+    <div id="skills-section" class="skills-section animate__animated animate__fadeInU">
+      <p id="skills" class="skills-title">
+        <span>M</span><span>y</span> <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span>
+      </p>
+  </div>
+
+  <div class="card-containter">
+    <div *ngFor="let skill of skills">
+      <div *ngIf="skill.skillPic" class="project-card">
+        <img [src]="getImageUrl(skill.skillPic)" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+          <h2 class="card-title">{{ skill.skillName }}</h2>
+          <p class="card-text">{{ skill.skillDetails }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+<app-contact></app-contact>
+</div>
+
+
+<app-footer></app-footer>
+

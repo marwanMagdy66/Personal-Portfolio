@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "66c62396eefe6679163c1b8d"
+  },
+  "name": "ali",
+  "email": "ali@gmail.com",
+  "password": "$2a$08$BrENklG4Ugp6CYJtCtI7xOewnqj7AtrUmSjyu8lyZts0MQYU6zcyW",
+  "createdAt": {
+    "$date": "2024-08-21T17:27:50.289Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-21T17:27:50.289Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c623e8093db3b8561f1c0f"
+  },
+  "name": "maro",
+  "email": "maro@gmail.com",
+  "password": "$2a$08$qpYOGPrtRJbriHxp0V436egPaHsrZOB3nPXA/b1JFjOltym2EDAkO",
+  "createdAt": {
+    "$date": "2024-08-21T17:29:12.470Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-21T17:29:12.470Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c63c3cdbf88e727d70f772"
+  },
+  "name": "marwan",
+  "email": "marwan@gmail.com",
+  "password": "$2a$08$jRK.AWmub6pSPlzpG48Qm.XN.l4saWMaDiVbpiOzpBf5FDBZ41oYq",
+  "createdAt": {
+    "$date": "2024-08-21T19:13:00.756Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-21T19:13:00.756Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66cbe646eeb5e15727a4ea06"
+  },
+  "name": "marwan",
+  "email": "maromaro200315@gmail.com",
+  "password": "$2a$08$YT.xQp0M5/toyoMitDMJ0.Nb51rr1.21C6Ct5ormwI3jQGXQjw3h2",
+  "createdAt": {
+    "$date": "2024-08-26T02:19:50.103Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-26T02:19:50.103Z"
+  },
+  "__v": 0
+}]

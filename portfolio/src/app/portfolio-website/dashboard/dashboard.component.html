@@ -1,0 +1,64 @@
+<div class="dashboard">
+<div class="container">
+  <h1>Dashboard</h1>
+
+  <div class="section">
+      <div class="section-header">
+          <h2>Skills</h2>
+          <button class="add-button" (click)="add()">Add Skills And Projects</button>
+      </div>
+      <table class="styled-table">
+          <thead>
+              <tr>
+                  <th>Image</th>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let skill of skills">
+                  <td *ngIf="skill.skillPic"><img [src]="getImageUrl(skill.skillPic)"  alt="Angular"></td>
+                  <td *ngIf="skill.skillName"><h5>{{ skill.skillName }}</h5></td>
+                  <td *ngIf="skill.skillDetails"><p> {{ skill.skillDetails }}</p></td>
+                  <td *ngIf="skill.skillName">
+                      <button  *ngIf="skill.skillName" class="edit-button" (click)="editSkill(skill._id)">Edit</button>
+                      <button  *ngIf="skill.skillName" class="delete-button" (click)="deleteSkill(skill._id)">Delete</button>
+                  </td>
+              </tr>
+              <!-- Repeat for more skills -->
+          </tbody>
+      </table>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <h2>Projects</h2>
+  </div>
+      <table class="styled-table">
+          <thead>
+              <tr>
+                  <th>Image</th>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Actions</th>
+              </tr>
+          </thead>
+         <tbody>
+    <tr *ngFor="let project of projects" >
+        <td *ngIf="project.projectPic"><img [src]="getImageUrl(project.projectPic)" alt="Portfolio"></td>
+        <td *ngIf="project.projectName"><h5>{{ project.projectName }}</h5></td>
+        <td *ngIf="project.projectDetails"><p>{{ project.projectDetails }}</p></td>
+        <td *ngIf="project.projectName">
+            <button *ngIf="project.projectName" class="edit-button" (click)="editProject(project._id)">Edit</button>
+            <button *ngIf="project.projectName" class="delete-button" (click)="deleteProject(project._id)">Delete</button>
+        </td>
+    </tr>
+</tbody>
+
+      </table>
+  </div>
+</div>
+
+
+</div>

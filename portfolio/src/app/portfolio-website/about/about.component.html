@@ -1,0 +1,55 @@
+<div class="about-me-container">
+  <div class="main-content animate__animated animate__fadeInU">
+    <div class="education-section" *ngIf="showEduction">
+      <div
+        id="skills-section"
+        class="skills-section animate__animated animate__fadeInU"
+      >
+        <p id="education" class="title">
+          <span>E</span><span>D</span> <span>U</span><span>C</span><span>A</span
+          ><span>T</span><span>I</span><span>O</span><span>N</span>
+        </p>
+      </div>
+      <div class="edu-section">
+        <div class="img-container">
+          <img src="/faculty.jpg" class="faculty-img" alt="Faculty Image" />
+        </div>
+        <div class="edu-details">
+          <p class="edu-item"><strong>University Name:</strong> Helwan University</p>
+          <p class="edu-item"><strong>College Name:</strong> Computer Science</p>
+          <p class="edu-item"><strong>Degree:</strong> 3.23/4</p>
+          <p class="edu-item"><strong>Graduation Year:</strong> 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-section" *ngIf="showProjects">
+      <div
+        id="skills-section"
+        class="skills-section animate__animated animate__fadeInU"
+      >
+        <p id="projects" class="title">
+          <span>P</span><span>R</span> <span>O</span><span>J</span><span>E</span
+          ><span>C</span><span>T</span><span>s</span>
+        </p>
+      </div>
+
+      <div class="card-containter">
+        <div *ngFor="let project of projects">
+          <div *ngIf="project.projectPic" class="project-card">
+            <img [src]="getImageUrl(project.projectPic)" class="card-img-top" alt="Project Image">
+            <div class="card-body">
+              <h2 class="card-title">{{ project.projectName }}</h2>
+              <p class="card-text">{{ project.projectDetails }}</p>
+              <a href="https://github.com/marwanMagdy66" class="btn btn-primary">
+                <i class="fab fa-github"></i> Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

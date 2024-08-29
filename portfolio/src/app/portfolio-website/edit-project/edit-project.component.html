@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="form-container">
+  <h2>Edit Project</h2>
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+
+  <form (ngSubmit)="updateProject()">
+    <div class="form-group">
+      <label for="projectName">New Project Name</label>
+      <input type="text" id="projectName" name="projectName" [(ngModel)]="projectName"  placeholder="Enter your project name" required >
+    </div>
+
+    <div class="form-group">
+      <label for="projectDetails">Details of the Project</label>
+      <textarea id="projectDetails" name="projectDetails" [(ngModel)]="projectDetails" placeholder="Add Project Details" rows="6" required ></textarea>
+    </div>
+
+    <div class="form-group file-upload-group">
+      <label for="projectImage" class="custom-file-label">
+        <i class="fas fa-upload"></i> Upload Image for That Project
+      </label>
+      <input type="file" id="projectImage" (change)="onFileChange($event)" name="project">
+    </div>
+
+
+    <button type="submit">Update Project</button>
+  </form>
+</div>
+</div>

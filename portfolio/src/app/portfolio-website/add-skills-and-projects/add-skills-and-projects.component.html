@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="form-container">
+    <h2>Update Your Information</h2>
+
+    <!-- Success Message -->
+    <div *ngIf="successMessage" class="alert alert-success">
+      {{ successMessage }}
+    </div>
+
+    <!-- Form for updating information -->
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+      <!-- Form for home about page -->
+      <div class="form-group">
+        <label for="description">Summary</label>
+        <textarea id="description" name="description" placeholder="Update your summary" rows="6" required ngModel></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="skillName">New Skill Name</label>
+        <input type="text" id="skillName" name="skillName" placeholder="Enter your new skill" required ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="skillDetails">Details of that Skill</label>
+        <textarea id="skillDetails" name="skillDetails" placeholder="Add Skill Details" rows="6" required ngModel></textarea>
+      </div>
+
+      <div class="form-group file-upload-group">
+        <label for="skillImage" class="custom-file-label">
+          <i class="fas fa-upload"></i> Upload Image for That Skill
+        </label>
+        <input type="file" id="skillImage" name="skillImage">
+      </div>
+
+      <!-- Form for update about page -->
+      <div class="form-group">
+        <label for="projectName">New Project Name</label>
+        <input type="text" id="projectName" name="projectName" placeholder="Enter your project name" required ngModel>
+      </div>
+
+      <div class="form-group">
+        <label for="projectDetails">Details of the Project</label>
+        <textarea id="projectDetails" name="projectDetails" placeholder="Add Project Details" rows="6" required ngModel></textarea>
+      </div>
+
+      <div class="form-group file-upload-group">
+        <label for="projectImage" class="custom-file-label">
+          <i class="fas fa-upload"></i> Upload Image for That Project
+        </label>
+        <input type="file" id="projectImage" name="projectImage">
+      </div>
+
+      <button type="submit">Update</button>
+    </form>
+  </div>
+</div>
